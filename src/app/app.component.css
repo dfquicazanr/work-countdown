@@ -3,6 +3,12 @@
   background: cornflowerblue;
 }
 
+.app__image {
+  margin: auto;
+  display: block;
+  height: 50%;
+}
+
 h1 {
   margin: 0;
   padding: 150px 0 0;

@@ -1,16 +1,18 @@
 <div class="app">
   <h1>
     Quedan
-    {{ weeks === 1 ? 'una semana' : '' }}
-    {{ weeks !== 0 ? weeks + ' semanas' : '' }}
-    {{ days === 1 ? 'un día' : '' }}
-    {{ days !== 0 ? days + ' días' : '' }}
-    {{ hours === 1 ? 'una horas' : ''}}
-    {{ hours !== 0 ? hours + ' horas' : ''}}
-    {{ minutes === 1 ? 'un minuto' : '' }}
-    {{ minutes !== 0 ? minutes + ' minutos' : '' }}
-    {{ seconds === 1 ? 'un segundo' : '' }}
-    {{ seconds !== 0 ? seconds + ' segundos' : '' }}
+    {{ weeks === 1 ? '1 semana' : '' }}
+    {{ weeks > 1 ? weeks + ' semanas' : '' }}
+    {{ days === 1 ? '1 día' : '' }}
+    {{ days > 1 ? days + ' días' : '' }}
+    {{ hours === 1 ? '1 hora' : ''}}
+    {{ hours > 1 ? hours + ' horas' : ''}}
+    {{ minutes === 1 ? '1 minuto' : '' }}
+    {{ minutes > 1 ? minutes + ' minutos' : '' }}
+    {{ seconds === 1 ? '1 segundo' : '' }}
+    {{ seconds > 1 ? seconds + ' segundos' : '' }}
     para el fin de todo esto
   </h1>
+
+  <img class="app__image" alt="amsiedad" src="assets/imageedit_7_8660601201.png">
 </div>
