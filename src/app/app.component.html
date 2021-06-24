@@ -13,12 +13,13 @@
     {{ seconds > 1 ? seconds + ' segundos' : '' }}
     para el fin de todo esto
   </h1>
+  <ng-container *ngIf="weeks < 1">
+    <iframe *ngIf="isChrome" allow="autoplay" style="visibility: hidden; height: 0" width="0" height="0" src="assets/Yay.mp3">
+    </iframe>
 
-<!--  <iframe *ngIf="weeks < 1" allow="autoplay" style="visibility: hidden; height: 0" width="0" height="0" src="assets/Yay.mp3">-->
-<!--  </iframe>-->
-
-  <audio autoplay id="playAudio">
-    <source src="assets/Yay.mp3">
-  </audio>
+    <audio *ngIf="!isChrome" autoplay>
+      <source src="assets/Yay.mp3">
+    </audio>
+  </ng-container>
   <img class="app__image" alt="amsiedad" src="assets/sheems_thomas.png">
 </div>
