@@ -119,7 +119,6 @@ var removeConfetti;
     }
   }
 )();
-setTimeout(() =>{
-  console.log('asdasd');
+setTimeout(() => {
   startConfetti();
 }, 4000 );
