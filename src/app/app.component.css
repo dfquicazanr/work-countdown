@@ -3,6 +3,23 @@
   background: #e6de80;
 }
 
+.app__button {
+  width: 200px;
+  border: none;
+  background-color: #791418;
+  color: white;
+  border-radius: 5px;
+  font-size: xx-large;
+  margin: auto;
+  padding: 10px;
+  display: block;
+}
+
+.app__button:hover {
+  cursor: pointer;
+  background-color: #a35259;
+}
+
 .app__image {
   margin: 70px auto;
   display: block;

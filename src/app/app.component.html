@@ -13,8 +13,12 @@
     {{ seconds > 1 ? seconds + ' segundos' : '' }}
     para el fin de todo esto
   </h1>
+  <img class="app__image" alt="amsiedad" src="assets/sheems_thomas.png">
+
+  <button class="app__button" (click)="click()">
+    Click Me
+  </button>
   <audio *ngIf="weeks < 1" hidden #mediaPlayer>
     <source src="https://tea-posts.s3.amazonaws.com/Yay.mp3">
   </audio>
-  <img class="app__image" alt="amsiedad" src="assets/sheems_thomas.png">
 </div>

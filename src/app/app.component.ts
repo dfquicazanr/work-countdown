@@ -9,8 +9,12 @@ export class AppComponent {
 
   @ViewChild('mediaPlayer', {static: false})
   set mediaPlayer(media: ElementRef) {
-    media.nativeElement.play();
+    this.media = media.nativeElement;
   };
+
+  hasBeenClicked = false;
+
+  media: any;
 
   countDownDate = new Date('july 1, 2021').getTime();
   weeks = 0;
@@ -28,4 +32,9 @@ export class AppComponent {
     this.minutes = Math.floor(distance % (1000*60*60) / (1000*60));
     this.seconds = Math.floor(distance % (1000*60) / 1000);
   })
+
+  click(): void {
+    this.hasBeenClicked = true;
+    this.media.play();
+  }
 }
