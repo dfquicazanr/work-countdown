@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, ElementRef, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+
+  @ViewChild('mediaPlayer', {static: false})
+  set mediaPlayer(media: ElementRef) {
+    media.nativeElement.play();
+  };
+
   countDownDate = new Date('july 1, 2021').getTime();
   weeks = 0;
   days = 0;
