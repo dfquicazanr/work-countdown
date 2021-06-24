@@ -121,4 +121,4 @@ var removeConfetti;
 )();
 setTimeout(() => {
   startConfetti();
-}, 4000 );
+}, 2000 );

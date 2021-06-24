@@ -14,7 +14,11 @@
     para el fin de todo esto
   </h1>
 
-  <iframe *ngIf="weeks < 1" style="visibility: hidden; height: 0" width="0" height="0" src="https://www.youtube.com/embed/attUrDwfdr8?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
-  </iframe>
+<!--  <iframe *ngIf="weeks < 1" allow="autoplay" style="visibility: hidden; height: 0" width="0" height="0" src="assets/Yay.mp3">-->
+<!--  </iframe>-->
+
+  <audio autoplay id="playAudio">
+    <source src="assets/Yay.mp3">
+  </audio>
   <img class="app__image" alt="amsiedad" src="assets/sheems_thomas.png">
 </div>
