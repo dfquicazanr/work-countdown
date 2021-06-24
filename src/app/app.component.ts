@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare const startConfetti: any;
 
 @Component({
   selector: 'app-root',
@@ -22,4 +23,6 @@ export class AppComponent {
     this.minutes = Math.floor(distance % (1000*60*60) / (1000*60));
     this.seconds = Math.floor(distance % (1000*60) / 1000);
   })
+  // @ts-ignore
+  startConfetti();
 }
