@@ -14,11 +14,11 @@
     para el fin de todo esto
   </h1>
   <ng-container *ngIf="weeks < 1">
-    <iframe *ngIf="isChrome" allow="autoplay" style="visibility: hidden; height: 0" width="0" height="0" src="assets/Yay.mp3">
+    <iframe *ngIf="isChrome" allow="autoplay" style="visibility: hidden; height: 0" width="0" height="0" src="https://tea-posts.s3.amazonaws.com/Yay.mp3">
     </iframe>
 
     <audio *ngIf="!isChrome" hidden autoplay>
-      <source src="assets/Yay.mp3">
+      <source src="https://tea-posts.s3.amazonaws.com/Yay.mp3">
     </audio>
   </ng-container>
   <img class="app__image" alt="amsiedad" src="assets/sheems_thomas.png">
