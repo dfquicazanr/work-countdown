@@ -16,7 +16,7 @@ export class AppComponent {
 
   media: any;
 
-  countDownDate = new Date('july 1, 2021').getTime();
+  countDownDate = new Date('july 14, 2021').getTime();
   weeks = 0;
   days = 0;
   hours = 0;
